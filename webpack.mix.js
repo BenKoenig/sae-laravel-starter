@@ -15,9 +15,9 @@ const tailwindcss = require('tailwindcss');
 
 /*mix.sass('resources/sass/app.scss', 'public/css').version()*/
 
-mix.js('resources/vue/HelloWorld', 'public/js/vue-app.js').vue().version()
+mix.js('resources/vue', 'public/js/vue-app.js').vue().version()
 
-mix.js('resources/vue/HelloWorld/index.js', 'public/js')
+mix.js('resources/vue/index.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .options({
         postCss: [ tailwindcss('./tailwind.config.js') ],
